@@ -2,58 +2,127 @@
 <html lang="hu-HU">
 	<head>
 		<meta charset="utf-8">
-		<title>Táblák stb.</title>
+		<title>Tables</title>
 		<style>
-			table,th,td{
+			body{
+				background-color:AntiqueWhite;
+			}
+		
+			h1{
+				transform:translateY(-50%)
+			}
+			h1::first-letter{
+				color:darkred;
+				font-size:3ep;
+				font-style:sup;
+			}
+			table{
+				margin: 0 auto;
+			
+			
+			}
+			
+			th,td{
 				border: 2px groove black;
 				padding: 3px;
-				margin:10px;
+				
 				width:20%;
 				height:20px;
 				text-align:center;
 				overflow-x:auto;
+				
 			}
+			
 		th{
 			background-color:grey;
 			color:orange;
 			border-radius:5px;
 			overflow:visible;
-			
+			opacity:0.2;
 		}
 		th:hover{
 			background-color:red;
+			opacity:1.0;
 		}
 		td{
 			background-color:skyblue;
 			border-radius:5px;
+			opacity:0.2;
 		}
 		td:hover{
 			background-color:green;
 			font-size:20px;
+			opacity:1.0;
+		}
+		footer{
+			font-weight:bold;
+		}
+		
+		
+		legend{
+			font-size:30px;
+			font-style:italic;
+		
+		}
+		ul{
+			list-style:none;
+		}
+		.home{
+			background-color:grey;
+			padding:5px;
+			border:solid black;
+			margin:5px;
 			
+			width:fit-content;
+		}
+		.references{
+			background-color:grey;
+			padding:5px;
+			border:solid black;
+			margin:5px;
+			
+			width:fit-content;
+		}
+		.me{
+			background-color:grey;
+			padding:5px;
+			border:solid black;
+			margin:5px;
+			
+			width:fit-content;
 		}
 		</style>
 	</head>
 
 	<body>
-		<h1>Táblák</h1><br>
+		<h1>Tables</h1><br>
+		
+		<legend>Navbar</legend>
+		<ul>
+			<a href="https://www.w3schools.com/css/css_navbar.asp" target="_blank"><li class="home">Home</li></a><br>
+			<a href="https://www.w3schools.com/css/css_navbar.asp" target="_blank"><li class="references">References</li></a><br>
+			<a href="https://www.w3schools.com/css/css_navbar.asp" target="_blank"><li class="me">Me,Myself and I</li></a>
+		
+		</ul>
+		
 		
 		<table>
 			<tr>
-				<a href="https://hu.wikipedia.org/wiki/H%C3%A9tf%C5%91" name="hetfo" target="_blank">
-					<th>Hétfő</th></a>
-					<a href="https://hu.wikipedia.org/wiki/Kedd" target"_blank">
-					<th>Kedd</th></a>
-					<th>Szerda</th>
+				
+					<th>C++</th>
+					<th>SQL</th>
+					<th>JAVA</th>
 			</tr>
 			<tr>
-					<td>Matek</td>
-					<td>Infromatika</td>
-					<td>Logika</td>
+					<td>HTML</td>
+					<td>CSS</td>
+					<td>JavaScript</td>
 			</tr>
 		
 		</table>
-	
+	<footer>
+		<p>&copy; Dekerto </p>
+	</footer>
 	
 	</body>
 
